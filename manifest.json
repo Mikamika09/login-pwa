@@ -1,15 +1,8 @@
 {
-  "name": "Local Login System",
+  "name": "Login PWA",
   "short_name": "LoginApp",
-"start_url": "/login-pwa/",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#2563eb",
-  "icons": [
-    {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
-  ]
+  "theme_color": "#2563eb"
 }

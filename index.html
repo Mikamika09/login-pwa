@@ -5,11 +5,20 @@
   <title>Login PWA</title>
 
   <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Login PWA</h1>
-  <p>PWA is working</p>
 
+  <div id="login-area">
+    <input type="text" id="username" placeholder="ユーザ名">
+    <input type="password" id="password" placeholder="パスワード">
+    <button onclick="login()">ログイン</button>
+  </div>
+
+  <p id="message"></p>
+
+  <script src="login.js"></script>
   <script>
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("sw.js");
