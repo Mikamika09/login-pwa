@@ -1,7 +1,19 @@
-<link rel="manifest" href="manifest.json">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Login PWA</title>
 
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
-}
-</script>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>Login PWA</h1>
+  <p>PWA is working</p>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+</body>
+</html>
