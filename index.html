@@ -1,28 +1,17 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>Login PWA</title>
-
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
   <h1>Login PWA</h1>
 
-  <div id="login-area">
-    <input type="text" id="username" placeholder="ユーザ名">
-    <input type="password" id="password" placeholder="パスワード">
-    <button onclick="login()">ログイン</button>
-  </div>
+  <!-- ユーザ名入力 -->
+  <input type="text" id="username" placeholder="ユーザ名">
 
+  <!-- パスワード入力 -->
+  <input type="password" id="password" placeholder="パスワード">
+
+  <!-- ログインボタン -->
+  <button onclick="login()">ログイン</button>
+
+  <!-- メッセージ表示 -->
   <p id="message"></p>
 
   <script src="login.js"></script>
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js");
-    }
-  </script>
 </body>
-</html>
